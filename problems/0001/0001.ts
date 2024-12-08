@@ -5,9 +5,10 @@ export class Solution1 extends AbstractSolution {
     return "Multiples of 3 or 5";
   }
   solve() {
-    return this.doSolve(19564);
+    return this.doSolve(8456);
   }
   private getSumOfDivisors(num: number, limit: number): number {
+    limit = limit % num == 0 ? limit - 1 : limit;
     const up = Math.floor(limit / num);
     const sum1toN = ((up + 1) * up) / 2;
     return sum1toN * num;
