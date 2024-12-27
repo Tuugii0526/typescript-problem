@@ -30,4 +30,3 @@ class Primes extends AbstractSequence<number> {
     return true;
   }
 }
-console.log("isPrime:", Primes.isPrime(5));
