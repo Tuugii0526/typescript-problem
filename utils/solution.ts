@@ -8,9 +8,8 @@ export abstract class AbstractSolution {
     console.log("SOLUTION: ", result);
     console.log(`Solution took ${+endDate - +startDate}ms`);
   }
-  abstract solve(): any;//why protected is used here
+  protected abstract solve(): any; //why protected is used here
 }
-export function RunSolution(constructor:new()=>any)
-{
-  new constructor().run()
+export function RunSolution(constructor: new () => any) {
+  new constructor().run();
 }

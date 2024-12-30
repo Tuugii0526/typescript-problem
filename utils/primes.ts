@@ -1,6 +1,6 @@
 import { AbstractSequence } from "./sequence";
 
-class Primes extends AbstractSequence<number> {
+export class Primes extends AbstractSequence<number> {
   private static instance: Primes = new Primes();
   private constructor() {
     super();
