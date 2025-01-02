@@ -6,7 +6,7 @@ class Solution4 extends AbstractSolution {
     return "Largest Palindrome Product";
   }
   protected solve() {
-    return this.doSolve(4);
+    return this.doSolve(3);
   }
   private doSolve(digit: number): number {
     const upperLimit = 10 ** digit;
